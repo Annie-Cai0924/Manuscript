@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    background: white;
+}
+
+.header {
+    width: 100%;
+    padding-top: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.header__text {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Background Gradients */
+.background-gradients {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.gradient {
+    position: absolute;
+    box-shadow: 20px 0px 0px;
+}
+
+.gradient--orange-1 {
+    width: 800px;
+    height: 600px;
+    left: -49px;
+    top: 1150px;
+    background: linear-gradient(180deg, #FFCEB1 0%, #FFF1C1 47%);
+    filter: blur(100px);
+}
+
+.gradient--orange-2 {
+    width: 700px;
+    height: 500px;
+    left: -5px;
+    top: -4px;
+    background: linear-gradient(180deg, #FFCEB1 0%, #FFF1C1 47%);
+    filter: blur(100px);
+}
+.gradient--orange-3 {
+    width: 700px;
+    height: 500px;
+    left: -5px;
+    top: 4300px;
+    background: linear-gradient(180deg, #FFCEB1 0%, #FFF1C1 47%);
+    filter: blur(100px);
+}
+
+.gradient--green-3 {
+    width: 641px;
+    height: 280px;
+    left: 588px;
+    top: 4700px;
+    background: linear-gradient(180deg, #CDFFD4 0%, rgba(143.01, 255, 189.20, 0.50) 61%);
+    filter: blur(100px);
+}
+
+.gradient--green-1 {
+    width: 641px;
+    height: 280px;
+    left: 588px;
+    top: 1608px;
+    background: linear-gradient(180deg, #CDFFD4 0%, rgba(143.01, 255, 189.20, 0.50) 61%);
+    filter: blur(100px);
+}
+
+.gradient--green-2 {
+    width: 450px;
+    height: 250px;
+    left: 750px;
+    top: 300px;
+    background: linear-gradient(180deg, #CDFFD4 0%, rgba(143.01, 255, 189.20, 0.50) 61%);
+    filter: blur(100px);
+}
+
+.title-section {
+    margin: 250px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-section__main {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title-section__circular-text {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 20s linear infinite;
+}
+
+.title-section__circular-text svg {
+    width: 100%;
+    height: 100%;
+}
+
+.title-section__circular-text text {
+    font-family: 'Russo One', sans-serif;
+    font-size: 36px;
+    fill: #008135;
+    letter-spacing: 0.2em;
+}
+
+.publisher-info {
+    text-align: left;
+    position: absolute;
+    right: 80px;
+    top: 150px;
+    z-index: -100;
+}
+
+.publisher-info__text {
+    font-family: 'Futura';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    color: black;
+}
+
+.content-section {
+    margin: 100px 0;
+    padding: 50px;
+    padding-top: 0;
+    background: rgba(255, 255, 255, 0.65);
+    position: relative;
+    z-index: 2;
+}
+
+.content-section__title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.content-section__text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 160px;
+}
+
+.highlight {
+    color: #C79E63;
+}
+
+.big-text-section {
+    margin: 100px 0;
+    text-align: center;
+    position: relative;
+    z-index: 22;
+    overflow: visible;
+}
+
+.big-text {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 160px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.medium-text {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.small-text {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    float: left;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.650);
+    z-index: 22;
+}
+
+.footer {
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.split-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.content-section__title--left {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+}
+
+.content-section__title-group {
+    flex: -1 0 65%;
+    text-align: left;
+}
+
+.content-section__title-group .content-section__title {
+    margin-bottom: 10px;
+}
+
+.scroll {
+    white-space: nowrap;
+    position: relative;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.scroll {
+    animation: marquee 20s linear 0s infinite;
+}
+
+.scroll:hover {
+    animation-play-state: paused;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 100;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+.content-section {
+    position: relative;
+    overflow: visible;
+    padding-top: 0;
+}
+
+.big-text-section {
+    position: relative;
+    overflow: visible;
+}
+
+.small-text.sticky-header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.split-heading.sticky-header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 50px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.small-text {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.content-section__text {
+    position: relative;
+    z-index: 1;
+}
+
+
+.sticky-header {
+    transition: background 0.3s ease;
+}
+
+.back-top {
+    text-align: center;
+    position: sticky;
+    top: 86vh;
+    padding-right: 20px;
+    left: 0;
+    text-align: right;
+    transform: translateX(100px);
+    font-weight: 500;
+}
+
+.back-top a {
+    text-decoration: none;
+    color: #000;
+}
